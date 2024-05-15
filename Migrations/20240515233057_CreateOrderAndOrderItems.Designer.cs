@@ -4,6 +4,7 @@ using LancheControl.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LancheControl.Migrations
 {
     [DbContext(typeof(LancheContext))]
-    partial class LancheContextModelSnapshot : ModelSnapshot
+    [Migration("20240515233057_CreateOrderAndOrderItems")]
+    partial class CreateOrderAndOrderItems
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

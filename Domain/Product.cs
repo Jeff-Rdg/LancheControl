@@ -15,6 +15,6 @@ namespace LancheControl.Domain
         public string? Description { get; set; } = string.Empty;
 
         [Precision(10,2)]
-        public Decimal Price { get; set; }
+        public decimal Price { get; set; }
     }
 }
