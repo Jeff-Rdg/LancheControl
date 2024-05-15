@@ -9,6 +9,7 @@ namespace LancheControl.Domain
         public long Id { get; set; }
         
         [Required(ErrorMessage="O nome do funcionário é obrigatório",AllowEmptyStrings=false)]
+        [MaxLength(155, ErrorMessage = "Nome do funcionário não pode ultrapassar 155 caracteres.")]
         public string? Name { get; set; }
 
         [Required(ErrorMessage="O cargo do funcionário é obrigatório")] 
