@@ -11,12 +11,12 @@ namespace LancheControl.Domain
         [ForeignKey("order_id")]
         public long OrderId { get; set; }
 
-        public Order Order { get; set; }
+        public Order? Order { get; set; }
         
         [ForeignKey("product_id")]
         public long ProductId { get; set; }
 
-        public Product Product { get; set; }
+        public Product? Product { get; set; }
 
         public int Quantity { get; set; }
     }

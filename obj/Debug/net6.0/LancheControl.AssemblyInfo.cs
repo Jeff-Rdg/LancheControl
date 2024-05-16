@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LancheControl")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47514c601b6e3ec20e544cbe1c20bde91bafb4cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("LancheControl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LancheControl")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
