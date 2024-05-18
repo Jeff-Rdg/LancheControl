@@ -49,5 +49,11 @@ app.MapGet("/v1/employee/{:id:long}", (EmployeeService service, long id) =>
     return result is not null ? Results.Ok(result) : Results.NotFound();
 }).WithName("GetEmployeeById");
 
+app.MapGet("/v1/employee", (EmployeeService service, [FromQuery]int pageSize, [FromQuery]int  pageNumber ) =>
+{
+    var result = service.List(pageNumber, pageSize);
+    return result is not null ? Results.Ok(result) : Results.NotFound();
+}).WithName("GetEmployees");
+
 app.Run();
 
