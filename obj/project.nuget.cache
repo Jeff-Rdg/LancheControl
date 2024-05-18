@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IMxmmvrqApINObz2gbSq4lSyBN9weAcklU0TbSvwtDPFa77rOoGGg73w1GPIF/dZRuX/S42E74JkABiI8jBnDw==",
+  "dgSpecHash": "0LYWgqyn3SmUQLV8k5u2MdvYCgYJBifgGzce1wcVkqPDwES+SwgLrSKpwhYHzt+9jdMkwAflc1eTIRVuMP3VKg==",
   "success": true,
   "projectFilePath": "D:\\Projects\\c#\\LancheControl\\LancheControl\\LancheControl.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jsilv\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\jsilv\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jsilv\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\jsilv\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

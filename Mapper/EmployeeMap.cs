@@ -1,12 +1,11 @@
 ﻿using LancheControl.Domain;
 using LancheControl.DTO;
-using LancheControl.DTO.Employee;
 
 namespace LancheControl.Mapper
 {
-    public static class EmployeeMapper
+    public static class EmployeeMap
     {
-        public static EmployeeResponseDto EmployeeToResponse(Employee employee)
+        public static EmployeeResponseDto ToResponse(Employee employee)
         {
             return new EmployeeResponseDto
             {
@@ -15,15 +14,6 @@ namespace LancheControl.Mapper
                 UpdatedAt = employee.UpdatedAt,
                 Name = employee.Name,
                 Role = employee.Role
-            };
-        }
-
-        public static Employee EmployeeCreateToEmployee(EmployeeCreateDto dto)
-        {
-            return new Employee
-            {
-                Name = dto.Name,
-                Role = dto.Role
             };
         }
     }

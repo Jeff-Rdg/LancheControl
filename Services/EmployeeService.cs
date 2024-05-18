@@ -1,6 +1,6 @@
 ﻿using LancheControl.DataContext;
+using LancheControl.Domain;
 using LancheControl.DTO;
-using LancheControl.DTO.Employee;
 using LancheControl.Mapper;
 
 namespace LancheControl.Services
@@ -14,14 +14,20 @@ namespace LancheControl.Services
             _context = context;
         }
 
-        public EmployeeResponseDto Create(EmployeeCreateDto body)
+        public EmployeeResponseDto Create(Employee employee)
         {
-            var employee = EmployeeMapper.EmployeeCreateToEmployee(body);
-
             _context.Add(employee);
             _context.SaveChanges();
 
-            return EmployeeMapper.EmployeeToResponse(employee);
+            return EmployeeMap.ToResponse(employee);
+        }
+
+        public EmployeeResponseDto? GetById(long id)
+        {
+            var result = _context.Employees.Find(id);
+            if (result != null)
+                return EmployeeMap.ToResponse(result);
+            return null;
         }
     }
 }
